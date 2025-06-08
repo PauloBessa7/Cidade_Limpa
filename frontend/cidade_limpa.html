@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cidade Limpa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Cidade Limpa</h1>
+    <button class="login-btn">Login</button>
+  </header>
+
+  <section class="search-create">
+    <input type="number" id="search" placeholder="Pesquisar ocorrências">
+    <button id="search-btn">Buscar</button>
+    <button class="create-btn">Criar Ocorrência</button>
+  </section>
+
+  <section id="ocorrencias-list"></section>
+
+  <div id="popup" class="popup hidden">
+    <div class="popup-content">
+      <h2>Criar Ocorrência</h2>
+      <input type="text" id="cidade" placeholder="cidade" maxlength="100">
+      <input type="text" id="bairro" placeholder="Bairro" maxlength="100">
+      <input type="text" id="rua" placeholder="Rua" maxlength="100">
+      <input type="number" name="numero" id="numero" placeholder="Número da rua (opcional)">
+      <textarea id="descricao" placeholder="Descrição" maxlength="500"></textarea>
+      <button id="enviar-btn">Enviar</button>
+      <button id="fechar-btn">Fechar</button>
+    </div>
+  </div>
+
+  <footer>
+    <div>Sobre nós</div>
+    <div>Contato</div>
+    <div>Termos de uso</div>
+  </footer>
+
+  <script src="app.js"></script>    
+</body>
+</html>
